@@ -11,8 +11,8 @@
 # Git Status
 
 - Branch: master
-- Commit: 6a0ec6b
-- Last Update: 2026-08-08 15:32:31
+- Commit: 0933587
+- Last Update: 2026-08-08 17:56:43
 
 # Current Milestone
 
@@ -24,7 +24,7 @@
 
 # Current Tasks
 
-无（Phase 4.1.2 已完成；提交待做）。
+无（CI governance-check 修复已推送；等待 GitHub Actions 结果）。
 
 # Blocked Issues
 
@@ -32,7 +32,7 @@
 
 # Recent Changes
 
-| 2026-08-08 | Codex | Phase 3.8.3 CI Governance Check Integration | .github/workflows/ci.yml、AGENTS.md、.ai/prompts/_checklist.md、.ai/status.md、.ai/task-log.md、.ai/handoff.md | ADR-0003 | 完成 | || | 2026-08-08 | Codex | Phase 4.1.2 Task Lifecycle Framework Implementation | docs/decisions/0004-task-lifecycle-framework.md、.ai/task-lifecycle.md、.ai/tasks/_template.md、.ai/tasks/TSK-0001.md、.ai/governance-index.md、AGENTS.md、AI_REVIEW_RULES.md、.ai/prompts/_checklist.md、docs/decisions/README.md、.ai/status.md、.ai/task-log.md、.ai/handoff.md、.ai/context-snapshot.md | ADR-0004 | 完成 |
+| 2026-08-08 | Codex | Phase 4.1.2 Task Lifecycle Framework Implementation | docs/decisions/0004-task-lifecycle-framework.md、.ai/task-lifecycle.md、.ai/tasks/_template.md、.ai/tasks/TSK-0001.md、.ai/governance-index.md、AGENTS.md、AI_REVIEW_RULES.md、.ai/prompts/_checklist.md、docs/decisions/README.md、.ai/status.md、.ai/task-log.md、.ai/handoff.md、.ai/context-snapshot.md | ADR-0004 | 完成 | || | 2026-08-08 | Codex | CI governance-check 修复 | scripts/governance-check.ps1、.ai/status.md、.ai/task-log.md、.ai/handoff.md、.ai/context-snapshot.md | ADR-0003 | 完成 |
 
 # Important Decisions
 
@@ -40,11 +40,11 @@
 
 # Files Changed Recently
 
- M .ai/governance-index.md;  M .ai/handoff.md;  M .ai/prompts/_checklist.md;  M .ai/status.md;  M .ai/task-log.md;  M AGENTS.md;  M AI_REVIEW_RULES.md;  M docs/decisions/README.md; ?? .ai/task-lifecycle.md; ?? .ai/tasks/
+ M .ai/handoff.md;  M .ai/status.md;  M .ai/task-log.md
 
 # Next Actions
 
-1. 提交 Phase 3/4.1 治理变更。; 2. 为新项目设置 `config/project.yaml` 的 `language_profile` 并创建第一条 Spec。; 3. TASK 规则生命周期稳定后扩展机器校验。
+1. 确认 GitHub Actions governance-check PASS。; 2. 为新项目设置 `config/project.yaml` 的 `language_profile` 并创建第一条 Spec。; 3. TASK 规则生命周期稳定后扩展机器校验。
 
 # AI Instructions
 

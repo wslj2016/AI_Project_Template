@@ -28,10 +28,11 @@
 - Phase 3.8.2：Governance Validator 实现（`.ai/governance-checks.yaml` + `scripts/governance-check.ps1`，GOV-001 ~ GOV-006 本地 6/6 PASS）。
 - Phase 3.8.3：Governance Check 接入 GitHub Actions（独立 `governance-check` job，push 分支补齐 `master`，AGENTS 命令入口与收尾清单同步）。
 - Phase 4.1：AI Task Lifecycle Framework 实施（ADR-0004、TASK-001 ~ TASK-004、`.ai/task-lifecycle.md`、`.ai/tasks/` Task Instance Record）。
+- CI governance-check 修复：GOV-003 不再把 `build/last-build.json`、`build/last-test.json` 视为死引用（生成物由 G-001 校验）。
 
 ## 进行中
 
-无（Phase 4.1.2 已完成；提交待做）。
+无（CI governance-check 修复已推送；等待 GitHub Actions 结果）。
 
 ## 阻塞项
 
@@ -39,6 +40,6 @@
 
 ## 下一步
 
-1. 提交 Phase 3/4.1 治理变更。
+1. 确认 GitHub Actions governance-check PASS。
 2. 为新项目设置 `config/project.yaml` 的 `language_profile` 并创建第一条 Spec。
 3. TASK 规则生命周期稳定后扩展机器校验。

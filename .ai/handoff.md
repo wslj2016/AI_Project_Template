@@ -4,7 +4,7 @@
 
 ## 当前状态
 
-- 是否有未完成任务：否（Phase 4.1.2 已完成；提交待做）
+- 是否有未完成任务：否（CI governance-check 修复已推送；等待 GitHub Actions 结果）
 - 关联 Spec / ADR：ADR-0001、ADR-0002、ADR-0003、ADR-0004
 - Git 基线：已初始化并完成首次提交；Release tag v0.1.0 已创建。
 - 质量状态文档：`docs/quality-status.md` 已创建。
@@ -13,7 +13,7 @@
 
 ## 进行中任务
 
-Phase 4.1 AI Task Lifecycle Framework（Phase 4.1.2 完成；提交待做）。
+CI governance-check 修复（已推送；等待 GitHub Actions 结果）。
 
 ## 阻塞与待确认
 
@@ -34,6 +34,6 @@ Phase 4.1 AI Task Lifecycle Framework（Phase 4.1.2 完成；提交待做）。
 
 ## 下一步
 
-1. 按 `AGENTS.md` 读取顺序恢复上下文。
-2. 按上下文或任务指定加载 Task Instance Record（如 `.ai/tasks/TSK-0001.md`）。
-3. 提交 Phase 3/4.1 治理变更。
+1. 确认 GitHub Actions governance-check PASS。
+2. 按 `AGENTS.md` 读取顺序恢复上下文。
+3. 按上下文或任务指定加载 Task Instance Record（如 `.ai/tasks/TSK-0001.md`）。

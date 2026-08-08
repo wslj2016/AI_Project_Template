@@ -18,6 +18,7 @@
 | 2026-08-08 | Codex | Phase 3.8.2 Governance Validator Implementation | .ai/governance-checks.yaml、scripts/governance-check.ps1、.ai/status.md、.ai/task-log.md、.ai/handoff.md | ADR-0003 | 完成 |
 | 2026-08-08 | Codex | Phase 3.8.3 CI Governance Check Integration | .github/workflows/ci.yml、AGENTS.md、.ai/prompts/_checklist.md、.ai/status.md、.ai/task-log.md、.ai/handoff.md | ADR-0003 | 完成 |
 | 2026-08-08 | Codex | Phase 4.1.2 Task Lifecycle Framework Implementation | docs/decisions/0004-task-lifecycle-framework.md、.ai/task-lifecycle.md、.ai/tasks/_template.md、.ai/tasks/TSK-0001.md、.ai/governance-index.md、AGENTS.md、AI_REVIEW_RULES.md、.ai/prompts/_checklist.md、docs/decisions/README.md、.ai/status.md、.ai/task-log.md、.ai/handoff.md、.ai/context-snapshot.md | ADR-0004 | 完成 |
+| 2026-08-08 | Codex | CI governance-check 修复 | scripts/governance-check.ps1、.ai/status.md、.ai/task-log.md、.ai/handoff.md、.ai/context-snapshot.md | ADR-0003 | 完成 |
 
 ## 填写规则
 
