@@ -1,0 +1,30 @@
+# Governance Validator definitions.
+# GOV-xxx are automation checks, not engineering governance rules.
+# They are intentionally NOT registered in .ai/governance-index.md.
+schema_version: 1
+
+checks:
+  GOV-001:
+    name: Rule ID Integrity
+    owner: scripts/governance-check.ps1
+    description: 校验治理规则 ID 无重复、无缺失、无未登记。
+  GOV-002:
+    name: Owner Integrity
+    owner: scripts/governance-check.ps1
+    description: 校验每个规则只有一个 Owner，Owner 文件存在且包含规则正文。
+  GOV-003:
+    name: Reference Integrity
+    owner: scripts/governance-check.ps1
+    description: 校验文件引用、Rule 引用与 ADR 引用无死链。
+  GOV-004:
+    name: Layer Boundary
+    owner: scripts/governance-check.ps1
+    description: 基于 Markdown 结构分析校验规则定义未出现在错误 Layer。
+  GOV-005:
+    name: Exception Integrity
+    owner: scripts/governance-check.ps1
+    description: 校验 EXC 已登记、Owner 正确、Remove Condition 完整。
+  GOV-006:
+    name: Governance Index Integrity
+    owner: scripts/governance-check.ps1
+    description: 校验 governance-index 与实际规则文件一致。

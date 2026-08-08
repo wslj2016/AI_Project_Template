@@ -11,6 +11,12 @@
 | 2026-08-08 | Codex | Phase 2.6 收尾与 Release v0.1.0 | docs/releases/v0.1.0.md、AI_QUALITY_GATE.md、.ai/context-snapshot.md、.ai/conventions.md、.ai/status.md、.ai/handoff.md | ADR-0001 | 完成 |
 | 2026-08-08 | Codex | 创建质量状态文档 | docs/quality-status.md、.ai/status.md、.ai/task-log.md | ADR-0001 | 完成 |
 | 2026-08-08 | Codex | 更新 Release Note v0.1.0（Phase 2.7 格式） | docs/releases/v0.1.0.md、.ai/task-log.md | ADR-0001 | 完成 |
+| 2026-08-08 | Codex | Phase 3.4.1 Convention Layer 重构 | .ai/conventions.md、.ai/governance-index.md、.ai/status.md、.ai/task-log.md、.ai/handoff.md、.ai/context-snapshot.md、docs/decisions/README.md | ADR-0003 | 完成 |
+| 2026-08-08 | Codex | Phase 3.5.1 Review Layer 重构 | AI_REVIEW_RULES.md、.ai/governance-index.md、.ai/status.md、.ai/task-log.md、.ai/handoff.md、.ai/context-snapshot.md | ADR-0003 | 完成 |
+| 2026-08-08 | Codex | Phase 3.6.1 Quality Gate Layer 重构 | AI_QUALITY_GATE.md、.ai/governance-index.md、.ai/status.md、.ai/task-log.md、.ai/handoff.md、.ai/context-snapshot.md | ADR-0003 | 完成 |
+| 2026-08-08 | Codex | Phase 3.7.1 Governance Issue Resolution | AI_REVIEW_RULES.md、AI_QUALITY_GATE.md、.ai/governance-index.md、AGENTS.md、.ai/status.md、.ai/task-log.md、.ai/handoff.md、.ai/context-snapshot.md | ADR-0003 | 完成 |
+| 2026-08-08 | Codex | Phase 3.8.2 Governance Validator Implementation | .ai/governance-checks.yaml、scripts/governance-check.ps1、.ai/status.md、.ai/task-log.md、.ai/handoff.md | ADR-0003 | 完成 |
+| 2026-08-08 | Codex | Phase 3.8.3 CI Governance Check Integration | .github/workflows/ci.yml、AGENTS.md、.ai/prompts/_checklist.md、.ai/status.md、.ai/task-log.md、.ai/handoff.md | ADR-0003 | 完成 |
 
 ## 填写规则
 

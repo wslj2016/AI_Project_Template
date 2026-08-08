@@ -14,3 +14,4 @@
 | -- | ---- | ---- | ---- |
 | 0001 | 通用骨架 + 语言 Profile + AI 记忆区 | Accepted | 2026-08-08 |
 | 0002 | 模板发布前的质量加固 | Accepted | 2026-08-08 |
+| 0003 | AI Governance Architecture | Accepted | 2026-08-08 |

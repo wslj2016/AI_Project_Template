@@ -9,3 +9,4 @@
 5. 如架构或决策变化，新增 `docs/decisions/` ADR 并更新 `docs/decisions/README.md` 索引。
 6. 如 Spec 状态变化，更新对应 spec 文件并同步 `spec/INDEX.md`。
 7. 执行 `scripts/ai-health-check.ps1`，确认没有新增 FAIL。
+8. 执行 `scripts/governance-check.ps1`，确认 GOV-001 ~ GOV-006 PASS。

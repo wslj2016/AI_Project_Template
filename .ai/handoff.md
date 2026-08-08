@@ -4,16 +4,16 @@
 
 ## 当前状态
 
-- 是否有未完成任务：否
-- 关联 Spec / ADR：ADR-0001、ADR-0002
+- 是否有未完成任务：否（Phase 3.8.3 已完成，Phase 3 治理体系继续推进）
+- 关联 Spec / ADR：ADR-0001、ADR-0002、ADR-0003
 - Git 基线：已初始化并完成首次提交；Release tag v0.1.0 已创建。
 - 质量状态文档：`docs/quality-status.md` 已创建。
 - Release Note v0.1.0 已更新（Phase 2.7 格式）。
-- WIP 文件：无
+- WIP 文件：`AGENTS.md`、`AI_REVIEW_RULES.md`、`AI_QUALITY_GATE.md`、`.ai/conventions.md`、`.ai/governance-index.md`、`.ai/governance-checks.yaml`、`.ai/status.md`、`.ai/task-log.md`、`.ai/handoff.md`、`.ai/context-snapshot.md`、`.ai/prompts/_checklist.md`、`scripts/governance-check.ps1`、`.github/workflows/ci.yml`、`docs/decisions/0003-ai-governance-architecture.md`、`docs/decisions/README.md`
 
 ## 进行中任务
 
-无
+Phase 3 AI Engineering Governance（Phase 3.8.3 完成；提交待做）。
 
 ## 阻塞与待确认
 
@@ -35,5 +35,4 @@
 
 1. 按 `AGENTS.md` 读取顺序恢复上下文。
 2. 执行 `scripts/ai-health-check.ps1` 检查知识库。
-3. 从 `.ai/status.md` 的下一步选择任务。
-4. 进入 Phase 3 AI Engineering Rules。
+3. 提交当前 Phase 3 治理变更。

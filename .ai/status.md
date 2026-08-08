@@ -21,10 +21,16 @@
 - Release 记录：`docs/releases/v0.1.0.md`（tag v0.1.0）。
 - 质量状态文档：`docs/quality-status.md`。
 - 生命周期 Prompt 01-11 与共享收尾清单 `_checklist.md`。
+- Phase 3.1/3.4：ADR-0003 治理架构、`governance-index.md` 规则索引、`AGENTS.md` 入口修正、Convention Layer 重构。
+- Phase 3.5.1：Review Layer 重构为 AI Review Governance Layer（REV-001 ~ REV-005）。
+- Phase 3.6.1：Quality Gate Layer 重构为 AI Engineering Release Quality Gate（G-001 ~ G-006）。
+- Phase 3.7.1：治理一致性修复（REV-006、EXC 登记、质量门引用修正、AGENTS 加载顺序补齐）。
+- Phase 3.8.2：Governance Validator 实现（`.ai/governance-checks.yaml` + `scripts/governance-check.ps1`，GOV-001 ~ GOV-006 本地 6/6 PASS）。
+- Phase 3.8.3：Governance Check 接入 GitHub Actions（独立 `governance-check` job，push 分支补齐 `master`，AGENTS 命令入口与收尾清单同步）。
 
 ## 进行中
 
-无
+Phase 3 AI Engineering Governance（Phase 3.8.3 完成；提交待做）。
 
 ## 阻塞项
 
@@ -32,6 +38,5 @@
 
 ## 下一步
 
-1. 为新项目设置 `config/project.yaml` 的 `language_profile`。
-2. 创建第一条 Spec。
-3. 执行 `scripts/ai-health-check.ps1` 验收知识库完整性。
+1. 提交当前 Phase 3 治理变更。
+2. 为新项目设置 `config/project.yaml` 的 `language_profile` 并创建第一条 Spec。

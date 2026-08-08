@@ -11,28 +11,12 @@
 # Git Status
 
 - Branch: master
-- Commit: 9b3afce
-- Last Update: 2026-08-08 11:15:39
-
-# Build Status
-
-- Status: Not Configured
-- Result: skipped
-- Last Build Time: 2026-08-08 10:41:01
-- Details: No language profile configured.
-- Reason: No language profile configured.
-
-# Test Status
-
-- Status: Not Configured
-- Result: skipped
-- Last Test Time: 2026-08-08 10:41:01
-- Details: No test target configured.
-- Reason: No test target configured.
+- Commit: 364f5cd
+- Last Update: 2026-08-08 14:47:30
 
 # Current Milestone
 
-模板已达到可发布版本基线，并已固化 Git 首次提交。
+模板 v0.1.0 基线已发布（Git 首次提交 + tag v0.1.0）。
 
 # Completed Tasks
 
@@ -40,7 +24,7 @@
 
 # Current Tasks
 
-无
+Phase 3 AI Engineering Governance（Phase 3.7.1 完成；health-check 规则校验扩展与提交待做，暂不启动 Phase 3.8）。
 
 # Blocked Issues
 
@@ -48,19 +32,19 @@
 
 # Recent Changes
 
-| 2026-08-08 | Codex | 发布前 Review-Repair 循环 | AI_REVIEW_RULES.md、AI_QUALITY_GATE.md、.ai/prompts/、spec/INDEX.md、docs/decisions/、.github/workflows/、README.md、config/README.md | ADR-0002 | 完成 | || | 2026-08-08 | Codex | 初始化 Git 基线 | 全仓库（首次提交） | ADR-0001 | 完成 |
+| 2026-08-08 | Codex | Phase 3.6.1 Quality Gate Layer 重构 | AI_QUALITY_GATE.md、.ai/governance-index.md、.ai/status.md、.ai/task-log.md、.ai/handoff.md、.ai/context-snapshot.md | ADR-0003 | 完成 | || | 2026-08-08 | Codex | Phase 3.7.1 Governance Issue Resolution | AI_REVIEW_RULES.md、AI_QUALITY_GATE.md、.ai/governance-index.md、AGENTS.md、.ai/status.md、.ai/task-log.md、.ai/handoff.md、.ai/context-snapshot.md | ADR-0003 | 完成 |
 
 # Important Decisions
 
-0001 | 通用骨架 + 语言 Profile + AI 记忆区 | Accepted | 2026-08-08 |; 0002 | 模板发布前的质量加固 | Accepted | 2026-08-08 |
+0001 | 通用骨架 + 语言 Profile + AI 记忆区 | Accepted | 2026-08-08 |; 0002 | 模板发布前的质量加固 | Accepted | 2026-08-08 |; 0003 | AI Governance Architecture | Accepted | 2026-08-08 |
 
 # Files Changed Recently
 
- M .ai/context-snapshot.md
+ M .ai/context-snapshot.md;  M .ai/conventions.md;  M .ai/handoff.md;  M .ai/status.md;  M .ai/task-log.md;  M AGENTS.md;  M AI_QUALITY_GATE.md;  M AI_REVIEW_RULES.md;  M docs/decisions/README.md; ?? .ai/governance-index.md
 
 # Next Actions
 
-1. 为新项目设置 `config/project.yaml` 的 `language_profile`。; 2. 创建第一条 Spec。; 3. 执行 `scripts/ai-health-check.ps1` 验收知识库完整性。
+1. 扩展 `scripts/ai-health-check.ps1`，增加 governance-index 与 G/REV/EXC 规则校验（health-check 逻辑尚未修改）。; 2. 提交当前 Phase 3 治理变更。; 3. 为新项目设置 `config/project.yaml` 的 `language_profile` 并创建第一条 Spec。
 
 # AI Instructions
 
