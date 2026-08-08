@@ -8,6 +8,9 @@
 | 2026-08-08 | Codex | 评审并加固模板知识库 | AGENTS.md、.ai/、config/、scripts/、docs/、spec/、.github/ | ADR-0002 | 完成 |
 | 2026-08-08 | Codex | 发布前 Review-Repair 循环 | AI_REVIEW_RULES.md、AI_QUALITY_GATE.md、.ai/prompts/、spec/INDEX.md、docs/decisions/、.github/workflows/、README.md、config/README.md | ADR-0002 | 完成 |
 | 2026-08-08 | Codex | 初始化 Git 基线 | 全仓库（首次提交） | ADR-0001 | 完成 |
+| 2026-08-08 | Codex | Phase 2.6 收尾与 Release v0.1.0 | docs/releases/v0.1.0.md、AI_QUALITY_GATE.md、.ai/context-snapshot.md、.ai/conventions.md、.ai/status.md、.ai/handoff.md | ADR-0001 | 完成 |
+| 2026-08-08 | Codex | 创建质量状态文档 | docs/quality-status.md、.ai/status.md、.ai/task-log.md | ADR-0001 | 完成 |
+| 2026-08-08 | Codex | 更新 Release Note v0.1.0（Phase 2.7 格式） | docs/releases/v0.1.0.md、.ai/task-log.md | ADR-0001 | 完成 |
 
 ## 填写规则
 

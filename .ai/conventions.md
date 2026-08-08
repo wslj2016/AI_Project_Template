@@ -45,3 +45,11 @@
 
 - 单次提交只做一件事。
 - 提交信息：`<type>(<scope>): <summary>`，type 使用 feat/fix/docs/test/refactor/chore。
+
+## AI Execution Rules
+
+1. 所有命令执行必须获得真实返回结果。
+2. 禁止根据计划或者预期结果声称完成。
+3. 修改文件后必须输出修改列表。
+4. 测试完成必须提供测试结果。
+5. 发布判断必须基于实际检查结果。

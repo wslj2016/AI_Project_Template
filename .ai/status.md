@@ -6,7 +6,7 @@
 
 ## 当前里程碑
 
-模板已达到可发布版本基线，并已固化 Git 首次提交。
+模板 v0.1.0 基线已发布（Git 首次提交 + tag v0.1.0）。
 
 ## 已完成
 
@@ -17,6 +17,9 @@
 - handoff 与会话健康检查。
 - Spec/ADR 索引与 CI profile 解析。
 - 发布质量门：`AI_REVIEW_RULES.md`、`AI_QUALITY_GATE.md`。
+- 质量门模板例外：`language_profile=TBD`、build/test skipped 允许存在。
+- Release 记录：`docs/releases/v0.1.0.md`（tag v0.1.0）。
+- 质量状态文档：`docs/quality-status.md`。
 - 生命周期 Prompt 01-11 与共享收尾清单 `_checklist.md`。
 
 ## 进行中

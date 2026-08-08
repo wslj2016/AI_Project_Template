@@ -2,6 +2,20 @@
 
 发布前必须全部通过。
 
+## Template Project Exception
+
+以下 Warning 允许存在：
+
+- language_profile=TBD
+- build skipped
+- test skipped
+
+原因：当前项目为模板，不是实际软件项目。
+
+When copied to real project:
+
+These warnings must be resolved.
+
 ## G1 质量策略
 
 - `AI_REVIEW_RULES.md` 存在。

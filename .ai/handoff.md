@@ -6,7 +6,9 @@
 
 - 是否有未完成任务：否
 - 关联 Spec / ADR：ADR-0001、ADR-0002
-- Git 基线：已初始化并完成首次提交。
+- Git 基线：已初始化并完成首次提交；Release tag v0.1.0 已创建。
+- 质量状态文档：`docs/quality-status.md` 已创建。
+- Release Note v0.1.0 已更新（Phase 2.7 格式）。
 - WIP 文件：无
 
 ## 进行中任务
@@ -34,3 +36,4 @@
 1. 按 `AGENTS.md` 读取顺序恢复上下文。
 2. 执行 `scripts/ai-health-check.ps1` 检查知识库。
 3. 从 `.ai/status.md` 的下一步选择任务。
+4. 进入 Phase 3 AI Engineering Rules。
