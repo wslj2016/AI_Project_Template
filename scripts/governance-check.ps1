@@ -313,6 +313,8 @@ function Invoke-Gov003 {
                 if ($target -match '[<>*?{}]') { continue }
                 if ($target -match '^(META|EXE|ADR|DOD|REV|G|EXC)-\d{3}$') { continue }
                 if ($target -match '^ADR-\d{4}$' -or $target -match '^GOV-\d{3}$') { continue }
+                # Generated evidence files are validated by G-001; do not require them in GOV-003.
+                if ($target -match '^build/last-(build|test)\.json$') { continue }
                 if (-not (Test-FileRefCandidate -Target $target)) { continue }
                 $full = Get-RepoPath -Path $target
                 if ($full -and -not (Test-Path -LiteralPath $full)) {
@@ -328,6 +330,8 @@ function Invoke-Gov003 {
                 if ($target -match '[<>*?{}]') { continue }
                 if ($target -match '^(META|EXE|ADR|DOD|REV|G|EXC)-\d{3}$') { continue }
                 if ($target -match '^ADR-\d{4}$' -or $target -match '^GOV-\d{3}$') { continue }
+                # Generated evidence files are validated by G-001; do not require them in GOV-003.
+                if ($target -match '^build/last-(build|test)\.json$') { continue }
                 if (-not (Test-FileRefCandidate -Target $target)) { continue }
                 $full = Get-RepoPath -Path $target
                 if ($full -and -not (Test-Path -LiteralPath $full)) {
