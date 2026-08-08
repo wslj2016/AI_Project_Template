@@ -4,16 +4,16 @@
 
 ## 当前状态
 
-- 是否有未完成任务：否（Phase 3.8.3 已完成，Phase 3 治理体系继续推进）
-- 关联 Spec / ADR：ADR-0001、ADR-0002、ADR-0003
+- 是否有未完成任务：否（Phase 4.1.2 已完成；提交待做）
+- 关联 Spec / ADR：ADR-0001、ADR-0002、ADR-0003、ADR-0004
 - Git 基线：已初始化并完成首次提交；Release tag v0.1.0 已创建。
 - 质量状态文档：`docs/quality-status.md` 已创建。
 - Release Note v0.1.0 已更新（Phase 2.7 格式）。
-- WIP 文件：`AGENTS.md`、`AI_REVIEW_RULES.md`、`AI_QUALITY_GATE.md`、`.ai/conventions.md`、`.ai/governance-index.md`、`.ai/governance-checks.yaml`、`.ai/status.md`、`.ai/task-log.md`、`.ai/handoff.md`、`.ai/context-snapshot.md`、`.ai/prompts/_checklist.md`、`scripts/governance-check.ps1`、`.github/workflows/ci.yml`、`docs/decisions/0003-ai-governance-architecture.md`、`docs/decisions/README.md`
+- WIP 文件：`AGENTS.md`、`AI_REVIEW_RULES.md`、`AI_QUALITY_GATE.md`、`.ai/conventions.md`、`.ai/governance-index.md`、`.ai/governance-checks.yaml`、`.ai/task-lifecycle.md`、`.ai/tasks/_template.md`、`.ai/tasks/TSK-0001.md`、`.ai/status.md`、`.ai/task-log.md`、`.ai/handoff.md`、`.ai/context-snapshot.md`、`.ai/prompts/_checklist.md`、`scripts/governance-check.ps1`、`.github/workflows/ci.yml`、`docs/decisions/0003-ai-governance-architecture.md`、`docs/decisions/0004-task-lifecycle-framework.md`、`docs/decisions/README.md`
 
 ## 进行中任务
 
-Phase 3 AI Engineering Governance（Phase 3.8.3 完成；提交待做）。
+Phase 4.1 AI Task Lifecycle Framework（Phase 4.1.2 完成；提交待做）。
 
 ## 阻塞与待确认
 
@@ -30,9 +30,10 @@ Phase 3 AI Engineering Governance（Phase 3.8.3 完成；提交待做）。
 - P3：文档与代码漂移自动检测。
 - P3：CI 上传构建报告产物。
 - P3：新增 changelog 与 open-questions 文件。
+- P3：TASK 规则机器校验（生命周期稳定后扩展）。
 
 ## 下一步
 
 1. 按 `AGENTS.md` 读取顺序恢复上下文。
-2. 执行 `scripts/ai-health-check.ps1` 检查知识库。
-3. 提交当前 Phase 3 治理变更。
+2. 按上下文或任务指定加载 Task Instance Record（如 `.ai/tasks/TSK-0001.md`）。
+3. 提交 Phase 3/4.1 治理变更。

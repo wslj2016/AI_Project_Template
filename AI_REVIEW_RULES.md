@@ -23,6 +23,8 @@ AI_QUALITY_GATE.md
 定义：Review 检查范围。
 
 - `.ai/**/*.md`
+- `.ai/task-lifecycle.md`（Task Lifecycle 规则）
+- `.ai/tasks/`（Task Instance Record）
 - `AGENTS.md`、`README.md`
 - `config/`、`scripts/`、`.github/workflows/`
 - `docs/`、`spec/`

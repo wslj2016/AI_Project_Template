@@ -27,10 +27,11 @@
 - Phase 3.7.1：治理一致性修复（REV-006、EXC 登记、质量门引用修正、AGENTS 加载顺序补齐）。
 - Phase 3.8.2：Governance Validator 实现（`.ai/governance-checks.yaml` + `scripts/governance-check.ps1`，GOV-001 ~ GOV-006 本地 6/6 PASS）。
 - Phase 3.8.3：Governance Check 接入 GitHub Actions（独立 `governance-check` job，push 分支补齐 `master`，AGENTS 命令入口与收尾清单同步）。
+- Phase 4.1：AI Task Lifecycle Framework 实施（ADR-0004、TASK-001 ~ TASK-004、`.ai/task-lifecycle.md`、`.ai/tasks/` Task Instance Record）。
 
 ## 进行中
 
-Phase 3 AI Engineering Governance（Phase 3.8.3 完成；提交待做）。
+无（Phase 4.1.2 已完成；提交待做）。
 
 ## 阻塞项
 
@@ -38,5 +39,6 @@ Phase 3 AI Engineering Governance（Phase 3.8.3 完成；提交待做）。
 
 ## 下一步
 
-1. 提交当前 Phase 3 治理变更。
+1. 提交 Phase 3/4.1 治理变更。
 2. 为新项目设置 `config/project.yaml` 的 `language_profile` 并创建第一条 Spec。
+3. TASK 规则生命周期稳定后扩展机器校验。

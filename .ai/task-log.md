@@ -17,10 +17,11 @@
 | 2026-08-08 | Codex | Phase 3.7.1 Governance Issue Resolution | AI_REVIEW_RULES.md、AI_QUALITY_GATE.md、.ai/governance-index.md、AGENTS.md、.ai/status.md、.ai/task-log.md、.ai/handoff.md、.ai/context-snapshot.md | ADR-0003 | 完成 |
 | 2026-08-08 | Codex | Phase 3.8.2 Governance Validator Implementation | .ai/governance-checks.yaml、scripts/governance-check.ps1、.ai/status.md、.ai/task-log.md、.ai/handoff.md | ADR-0003 | 完成 |
 | 2026-08-08 | Codex | Phase 3.8.3 CI Governance Check Integration | .github/workflows/ci.yml、AGENTS.md、.ai/prompts/_checklist.md、.ai/status.md、.ai/task-log.md、.ai/handoff.md | ADR-0003 | 完成 |
+| 2026-08-08 | Codex | Phase 4.1.2 Task Lifecycle Framework Implementation | docs/decisions/0004-task-lifecycle-framework.md、.ai/task-lifecycle.md、.ai/tasks/_template.md、.ai/tasks/TSK-0001.md、.ai/governance-index.md、AGENTS.md、AI_REVIEW_RULES.md、.ai/prompts/_checklist.md、docs/decisions/README.md、.ai/status.md、.ai/task-log.md、.ai/handoff.md、.ai/context-snapshot.md | ADR-0004 | 完成 |
 
 ## 填写规则
 
 - 日期使用 YYYY-MM-DD。
 - 结果注明：完成 / 部分完成 / 阻塞 / 失败，失败需写原因。
-- 关联字段填写 Spec 或 ADR 编号，无则写“-”。
+- 关联字段填写 Spec 或 ADR 编号，无则写“-”；如任务已创建 Task Instance Record，在任务列注明 TSK ID。
 - 任务修改架构或决策时，必须先有对应 ADR。

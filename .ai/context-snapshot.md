@@ -11,8 +11,8 @@
 # Git Status
 
 - Branch: master
-- Commit: 364f5cd
-- Last Update: 2026-08-08 14:47:30
+- Commit: 6a0ec6b
+- Last Update: 2026-08-08 15:32:31
 
 # Current Milestone
 
@@ -24,7 +24,7 @@
 
 # Current Tasks
 
-Phase 3 AI Engineering Governance（Phase 3.7.1 完成；health-check 规则校验扩展与提交待做，暂不启动 Phase 3.8）。
+无（Phase 4.1.2 已完成；提交待做）。
 
 # Blocked Issues
 
@@ -32,19 +32,19 @@ Phase 3 AI Engineering Governance（Phase 3.7.1 完成；health-check 规则校�
 
 # Recent Changes
 
-| 2026-08-08 | Codex | Phase 3.6.1 Quality Gate Layer 重构 | AI_QUALITY_GATE.md、.ai/governance-index.md、.ai/status.md、.ai/task-log.md、.ai/handoff.md、.ai/context-snapshot.md | ADR-0003 | 完成 | || | 2026-08-08 | Codex | Phase 3.7.1 Governance Issue Resolution | AI_REVIEW_RULES.md、AI_QUALITY_GATE.md、.ai/governance-index.md、AGENTS.md、.ai/status.md、.ai/task-log.md、.ai/handoff.md、.ai/context-snapshot.md | ADR-0003 | 完成 |
+| 2026-08-08 | Codex | Phase 3.8.3 CI Governance Check Integration | .github/workflows/ci.yml、AGENTS.md、.ai/prompts/_checklist.md、.ai/status.md、.ai/task-log.md、.ai/handoff.md | ADR-0003 | 完成 | || | 2026-08-08 | Codex | Phase 4.1.2 Task Lifecycle Framework Implementation | docs/decisions/0004-task-lifecycle-framework.md、.ai/task-lifecycle.md、.ai/tasks/_template.md、.ai/tasks/TSK-0001.md、.ai/governance-index.md、AGENTS.md、AI_REVIEW_RULES.md、.ai/prompts/_checklist.md、docs/decisions/README.md、.ai/status.md、.ai/task-log.md、.ai/handoff.md、.ai/context-snapshot.md | ADR-0004 | 完成 |
 
 # Important Decisions
 
-0001 | 通用骨架 + 语言 Profile + AI 记忆区 | Accepted | 2026-08-08 |; 0002 | 模板发布前的质量加固 | Accepted | 2026-08-08 |; 0003 | AI Governance Architecture | Accepted | 2026-08-08 |
+0002 | 模板发布前的质量加固 | Accepted | 2026-08-08 |; 0003 | AI Governance Architecture | Accepted | 2026-08-08 |; 0004 | AI Task Lifecycle Framework | Accepted | 2026-08-08 |
 
 # Files Changed Recently
 
- M .ai/context-snapshot.md;  M .ai/conventions.md;  M .ai/handoff.md;  M .ai/status.md;  M .ai/task-log.md;  M AGENTS.md;  M AI_QUALITY_GATE.md;  M AI_REVIEW_RULES.md;  M docs/decisions/README.md; ?? .ai/governance-index.md
+ M .ai/governance-index.md;  M .ai/handoff.md;  M .ai/prompts/_checklist.md;  M .ai/status.md;  M .ai/task-log.md;  M AGENTS.md;  M AI_REVIEW_RULES.md;  M docs/decisions/README.md; ?? .ai/task-lifecycle.md; ?? .ai/tasks/
 
 # Next Actions
 
-1. 扩展 `scripts/ai-health-check.ps1`，增加 governance-index 与 G/REV/EXC 规则校验（health-check 逻辑尚未修改）。; 2. 提交当前 Phase 3 治理变更。; 3. 为新项目设置 `config/project.yaml` 的 `language_profile` 并创建第一条 Spec。
+1. 提交 Phase 3/4.1 治理变更。; 2. 为新项目设置 `config/project.yaml` 的 `language_profile` 并创建第一条 Spec。; 3. TASK 规则生命周期稳定后扩展机器校验。
 
 # AI Instructions
 

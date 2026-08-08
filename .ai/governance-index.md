@@ -12,6 +12,7 @@
 - `REV-xxx`
 - `G-xxx`
 - `EXC-xxx`
+- `TASK-xxx`
 - `ADR-xxx`
 
 说明：
@@ -22,6 +23,7 @@
 - `REV`：Review 规则
 - `G`：Quality Gate 规则
 - `EXC`：Exception 规则（Template Exception）
+- `TASK`：Task Lifecycle 规则（Cross-layer Governance Capability）
 - `ADR`：架构决策规则；治理规则编号，与 `docs/decisions/` 的 ADR 文档编号相互独立
 
 编号从三位序号 `001` 开始递增，不重复使用已废止编号。
@@ -49,6 +51,10 @@
 | EXC-001 | Template Exception language_profile=TBD | `AI_QUALITY_GATE.md` | Warning 已登记；真实项目必须设置语言 profile |
 | EXC-002 | Template Exception build skipped | `AI_QUALITY_GATE.md` | Warning 已登记；真实项目必须产生 build 证据 |
 | EXC-003 | Template Exception test skipped | `AI_QUALITY_GATE.md` | Warning 已登记；真实项目必须产生 test 证据 |
+| TASK-001 | Lifecycle State Model | `.ai/task-lifecycle.md` | 状态集合与状态定义见 `.ai/task-lifecycle.md`；机器校验待生命周期稳定后扩展 |
+| TASK-002 | Transition Rules | `.ai/task-lifecycle.md` | 允许转移、进入/退出条件与 Evidence 要求见 `.ai/task-lifecycle.md` |
+| TASK-003 | Task Record Standard | `.ai/task-lifecycle.md` | Task Instance ID 使用 `TSK-####`，记录文件位于 `.ai/tasks/`，模板 `.ai/tasks/_template.md` |
+| TASK-004 | Prompt Binding | `.ai/task-lifecycle.md` | 状态到 Prompt 01-11 与 `_checklist.md` 的绑定见 `.ai/task-lifecycle.md` |
 
 ## Ownership Notes
 
@@ -56,6 +62,7 @@
 - `DOD-001`：条件列表位于 `.ai/conventions.md`；执行步骤由 `.ai/prompts/_checklist.md` 承载。
 - `EXE-001`：细则位于 `.ai/conventions.md`；`AGENTS.md` 仅保留一行真实执行硬约束。
 - `REV-001` ~ `REV-006` 归属 `AI_REVIEW_RULES.md`；`G-001` ~ `G-006` 与 `EXC-001` ~ `EXC-003` 归属 `AI_QUALITY_GATE.md`；`ADR-001` 归属保持不变。
+- `TASK-001` ~ `TASK-004` 归属 `.ai/task-lifecycle.md`；规则正文见该文件，AGENTS 只加载规则文件，不自动加载 `.ai/tasks/`。
 
 ## Rule Lifecycle
 
@@ -64,3 +71,4 @@
 - 废止规则：保留历史行并标记 `deprecated`，不删除编号。
 
 当前阶段只建立框架，不迁移现有规则正文；后续按 ADR-0003 逐项收敛重复定义，并扩展机器校验能力。
+TASK 规则机器校验延期至生命周期稳定后。

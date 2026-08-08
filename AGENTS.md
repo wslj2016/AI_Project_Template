@@ -19,6 +19,7 @@
 7. `.ai/governance-index.md`
 8. `AI_REVIEW_RULES.md`
 9. `AI_QUALITY_GATE.md`
+10. `.ai/task-lifecycle.md`（Task Lifecycle 跨层治理能力；只加载本文件，不自动加载 `.ai/tasks/*.md`，当前 Task Instance 按上下文或任务指定加载）
 
 语言专项规则按需读取 `.ai/profiles/<profile>.md`；当前现场见 `.ai/handoff.md`。
 
