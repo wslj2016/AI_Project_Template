@@ -32,3 +32,13 @@
 - build：`powershell -ExecutionPolicy Bypass -File scripts/build.ps1 -Target Build`
 - test：`powershell -ExecutionPolicy Bypass -File scripts/build.ps1 -Target Test`
 - update-context：`powershell -ExecutionPolicy Bypass -File scripts/ai-context-update.ps1`
+
+## Execution Rule
+
+When a task requires running commands:
+
+1. Execute the command first.
+2. Wait for actual command output.
+3. Report only after receiving result.
+
+Do not claim execution based on intention or plan.
