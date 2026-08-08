@@ -1,0 +1,8 @@
+# 项目唯一元数据源（scripts 与 CI 自动读取）
+# language_profile 取值: c-cpp-embedded | csharp-tool | labview-ate | python-automation
+name: AI_Project_Template
+language_profile: TBD
+version: 0.1.0
+toolchain: TBD
+targets: TBD
+hardware: TBD

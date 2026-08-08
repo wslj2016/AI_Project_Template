@@ -1,0 +1,39 @@
+# Build output
+build/*
+!build/.gitkeep
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.orig
+*~
+*.swp
+*.swo
+
+# .NET
+bin/
+obj/
+*.user
+*.suo
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Toolchains / IDE
+.vs/
+.idea/
+*.lvbackup
+Debug/
+Release/
+
+# OS
+.DS_Store
+Thumbs.db
+*.log

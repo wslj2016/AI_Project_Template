@@ -1,0 +1,59 @@
+name: CI
+
+on:
+  push:
+    branches: [main, develop]
+  pull_request:
+  workflow_dispatch:
+    inputs:
+      profile:
+        description: 'Profile override (auto reads config/project.yaml)'
+        type: choice
+        options:
+          - auto
+          - c-cpp-embedded
+          - csharp-tool
+          - labview-ate
+          - python-automation
+        default: auto
+
+jobs:
+  build-test:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # LabVIEW 需要自托管 runner 并安装对应版本 LabVIEW 与驱动。
+      - name: Resolve profile
+        id: resolve
+        shell: pwsh
+        run: |
+          $profile = '${{ github.event.inputs.profile }}'
+          if (-not $profile -or $profile -eq 'auto') {
+            $yaml = Get-Content config/project.yaml -Raw
+            $line = ($yaml -split "`n" | Where-Object { $_ -match '^\s*language_profile\s*:' } | Select-Object -First 1)
+            if ($line) { $profile = (($line -split ':', 2)[1]).Trim().Trim('"').Trim("'") }
+          }
+          if ($profile -in @('c-cpp-embedded', 'csharp-tool', 'labview-ate', 'python-automation')) {
+            "skip=false" | Out-File -FilePath $env:GITHUB_OUTPUT -Encoding utf8 -Append
+          } else {
+            Write-Host "Profile '$profile' is not set; skipping CI body."
+            "skip=true" | Out-File -FilePath $env:GITHUB_OUTPUT -Encoding utf8 -Append
+          }
+          "profile=$profile" | Out-File -FilePath $env:GITHUB_OUTPUT -Encoding utf8 -Append
+
+      - name: Build
+        if: steps.resolve.outputs.skip == 'false'
+        shell: pwsh
+        run: ./scripts/build.ps1 -Target Build -Profile "${{ steps.resolve.outputs.profile }}"
+
+      - name: Test
+        if: steps.resolve.outputs.skip == 'false'
+        shell: pwsh
+        run: ./scripts/build.ps1 -Target Test -Profile "${{ steps.resolve.outputs.profile }}"
+
+      - name: Refresh context snapshot
+        if: steps.resolve.outputs.skip == 'false'
+        shell: pwsh
+        run: ./scripts/ai-context-update.ps1
